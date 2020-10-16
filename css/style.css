@@ -81,7 +81,7 @@ body {
       background-color: violet;
       transform: rotateY(180deg); }
     .card_face-front {
-      background-color: turquoise; }
+      background-color: black; }
   .card:hover .card_face-front {
     transform: rotateY(-180deg); }
   .card:hover .card_face-back {
