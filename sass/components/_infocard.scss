@@ -1,0 +1,41 @@
+.card{
+    //position: relative;
+    //background-color: transparent;
+    width: 300px;
+    height: 600px;
+    max-height: 1000vh;
+    perspective: 1000px;
+    color:black;
+
+    //position both faces within container
+    &_face{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        border-radius: 4px;
+        overflow: hidden;
+        transition: all 1s ease-out;
+       
+        //places back face in hidden position
+        &-back{
+           background-color: violet;
+           transform: rotateY(180deg);
+        }
+        &-front{           
+            background-color: turquoise;
+        }
+    }
+
+    //reveal by simultaneous rotation on hover
+    &:hover &_face-front{
+        transform: rotateY(-180deg);
+    }
+    &:hover &_face-back{
+        transform: rotateY(0);
+    }
+
+}
+

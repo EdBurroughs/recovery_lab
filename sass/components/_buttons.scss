@@ -1,0 +1,30 @@
+.btn{
+    display: inline-block;// needed to apply trnasforms
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10rem;
+    border: none;
+    transition: all 0.5s;
+
+
+    &_lg{
+        padding: 1.5rem 3rem;
+        font-size: 1.8rem;
+        font-weight: 300;
+    }
+
+    &_blue{
+        background-image: linear-gradient(to right bottom, rgba($primary, 1), rgba($hilightD, 1));
+        box-shadow: 0.3rem 0.3rem 0.5rem rgba($color: $tintD, $alpha: 0.3);
+        color: $grey;
+
+        &:hover{
+            background-image: linear-gradient(to right, rgba($hilightD, 1), rgba($hilightD, 1));
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0.5rem 0.5rem 0.7rem rgba($color: $tintD, $alpha: 0.5);
+            font-size: 2;
+       
+        }
+     
+    }
+}
