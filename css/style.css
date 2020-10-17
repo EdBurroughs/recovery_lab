@@ -99,7 +99,7 @@ body {
         background-position: bottom;
         background-size: cover; }
       .card_face-front-2 {
-        background-image: url("https://github.com/EdBurroughs/recovery_lab/blob/master/images/massage.jpg");
+        background-image: url("../images/massage.jpg");
         background-position: center; }
       .card_face-front-3 {
         background-image: url("/images/stairs.jpg");
