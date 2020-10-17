@@ -95,7 +95,7 @@ body {
     .card_face-front {
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 75%); }
       .card_face-front-1 {
-        background-image: url("../../images/shoulder.jpg");
+        background-image: url("../../images/shoulder.JPG");
         background-position: bottom;
         background-size: cover; }
       .card_face-front-2 {
