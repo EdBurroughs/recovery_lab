@@ -99,7 +99,11 @@ body {
         background-position: bottom;
         background-size: cover; }
       .card_face-front-2 {
+<<<<<<< HEAD
         background-image: url("../images.massage.jpg");
+=======
+        background-image: url("../images/massage.jpg");
+>>>>>>> 36dfcf9acbd009c559c04751307da7753d3a0602
         background-position: center; }
       .card_face-front-3 {
         background-image: url("../images/stairs.jpg");
