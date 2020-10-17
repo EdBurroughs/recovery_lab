@@ -95,15 +95,11 @@ body {
     .card_face-front {
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 75%); }
       .card_face-front-1 {
-        background-image: url("../images/shoulder.JPG");
+        background-image: url("../images/shoulder.jpg");
         background-position: bottom;
         background-size: cover; }
       .card_face-front-2 {
-<<<<<<< HEAD
-        background-image: url("../images.massage.jpg");
-=======
         background-image: url("../images/massage.jpg");
->>>>>>> 36dfcf9acbd009c559c04751307da7753d3a0602
         background-position: center; }
       .card_face-front-3 {
         background-image: url("../images/stairs.jpg");
@@ -149,6 +145,7 @@ body {
   .header_text {
     margin: 4rem 0rem 1rem;
     color: #06839b;
+    font-weight: 500;
     line-height: 2.3rem;
     text-align: center; }
   .header hr {
