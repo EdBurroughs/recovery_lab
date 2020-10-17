@@ -2,7 +2,7 @@ h1 {
   color: #08b6d9;
   text-transform: uppercase;
   font-size: 8rem;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.2rem;
   padding: 1rem;
   text-shadow: 0.1rem 0.2rem 0.4rem #045160; }
@@ -63,10 +63,17 @@ body {
 
 .card {
   width: 300px;
-  height: 600px;
+  height: 440px;
   max-height: 1000vh;
   perspective: 1000px;
-  color: black; }
+  filter: drop-shadow(2px 2px 7px rgba(6, 131, 155, 0.5));
+  border-bottom: 1px solid #aceefc;
+  border-radius: 4px; }
+  .card h3 {
+    color: #08b6d9;
+    position: relative;
+    text-align: center;
+    top: 400px; }
   .card_face {
     position: absolute;
     top: 0;
@@ -76,16 +83,39 @@ body {
     backface-visibility: hidden;
     border-radius: 4px;
     overflow: hidden;
-    transition: all 1s ease-out; }
+    transition: all 0.7s ease-out;
+    text-align: center;
+    text-transform: uppercase; }
     .card_face-back {
-      background-color: violet;
-      transform: rotateY(180deg); }
+      background-color: #f3f6f7;
+      opacity: 0;
+      text-align: justify;
+      padding: 1rem;
+      font-size: 1.6rem; }
     .card_face-front {
-      background-color: black; }
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 75%); }
+      .card_face-front-1 {
+        background-image: url("../../images/shoulder.jpg");
+        background-position: bottom;
+        background-size: cover; }
+      .card_face-front-2 {
+        background-image: url("../../images/massage.jpg");
+        background-position: center; }
+      .card_face-front-3 {
+        background-image: url("../../images/stairs.jpg");
+        background-position: center;
+        background-size: cover; }
+      .card_face-front-4 {
+        background-image: url("../../images/ergonome.jpg");
+        background-position: top; }
+      .card_face-front-5 {
+        background-image: url("../../images/Acupuncture.webp");
+        background-size: cover; }
   .card:hover .card_face-front {
-    transform: rotateY(-180deg); }
+    clip-path: none;
+    opacity: 0.7; }
   .card:hover .card_face-back {
-    transform: rotateY(0); }
+    opacity: 0.7; }
 
 .header {
   text-align: center;
@@ -154,7 +184,7 @@ body {
     margin-right: 3rem; }
 
 .info {
-  margin: 3rem auto;
+  padding: 3rem 3rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
