@@ -69,10 +69,16 @@ body {
   filter: drop-shadow(2px 2px 7px rgba(6, 131, 155, 0.5));
   border-bottom: 1px solid #aceefc;
   border-radius: 4px; }
+  .card ::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rosybrown; }
   .card h3 {
     color: #08b6d9;
     position: relative;
     text-align: center;
+    font-weight: 400;
     top: 400px; }
   .card_face {
     position: absolute;
@@ -83,17 +89,25 @@ body {
     backface-visibility: hidden;
     border-radius: 4px;
     overflow: hidden;
-    transition: all 0.7s ease-out;
+    transition: all 0.8s ease-out;
     text-align: center;
     text-transform: uppercase; }
     .card_face-back {
       background-color: #f3f6f7;
-      opacity: 0;
       text-align: justify;
       padding: 1rem;
       font-size: 1.6rem; }
+      .card_face-back > p {
+        font-size: 1.5rem;
+        text-align: justify;
+        margin-top: 3rem;
+        padding: 0.5rem;
+        color: #045160;
+        text-transform: none;
+        opacity: 0; }
     .card_face-front {
-      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 75%); }
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 75%);
+      z-index: 1; }
       .card_face-front-1 {
         background-image: url("../images/shoulder.jpg");
         background-position: bottom;
@@ -112,14 +126,20 @@ body {
         background-image: url("../images/Acupuncture.webp");
         background-size: cover; }
   .card:hover .card_face-front {
-    clip-path: none;
-    opacity: 0.7; }
+    opacity: 0;
+    transform: translateY(-55rem); }
   .card:hover .card_face-back {
-    opacity: 0.7; }
+    opacity: 1; }
+    .card:hover .card_face-back > h3 {
+      transform: translateY(-38rem);
+      transition: transform 0.6s ease-out; }
+    .card:hover .card_face-back > p {
+      opacity: 1;
+      transition: all 1.2s; }
 
 .header {
   text-align: center;
-  margin-top: 10rem;
+  margin-top: 13rem;
   background-color: #edf8fa;
   background-image: linear-gradient(to left, #fff, #edf8fa, #e1f6fa, #edf8fa, #fff); }
   .header_title {
@@ -157,18 +177,22 @@ body {
     box-shadow: 0 1px 2px black; }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-image: linear-gradient(to right, #08b6d9, #74e3fa, #eee);
-  box-shadow: 0 0.3rem 0.5rem rgba(6, 131, 155, 0.5);
   margin-bottom: 1rem;
-  border-bottom: 1px solid #aceefc;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; }
+  position: relative; }
+  .nav_top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right bottom, #08b6d9, #74e3fa, #eee);
+    filter: opacity(0.9);
+    box-shadow: 0 0.3rem 0.6rem rgba(6, 131, 155, 0.4);
+    border-bottom: 1px solid #aceefc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; }
   .nav_logo {
     padding: 2rem; }
     .nav_logo-img {
@@ -182,10 +206,24 @@ body {
       color: #f3f6f7;
       margin: 2rem; }
   .nav_btn {
-    margin-right: 3rem; }
+    margin-right: 5rem; }
+  .nav_links {
+    position: absolute;
+    top: 8rem;
+    height: 40px;
+    width: 100%;
+    padding: 2rem;
+    text-align: center; }
+    .nav_links > a {
+      text-decoration: none;
+      margin-right: 1rem;
+      font-size: 1.6rem;
+      color: #08b6d9;
+      font-weight: 500; }
 
 .info {
-  padding: 3rem 3rem 0;
+  padding: 3rem 3rem 3rem;
+  border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-between; }

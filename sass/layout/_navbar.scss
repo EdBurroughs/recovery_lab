@@ -1,21 +1,26 @@
 .nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image:linear-gradient(to right, rgba($primary, 1),$hilightD, #eee);
-    box-shadow: 0 0.3rem 0.5rem rgba($tintL, $alpha: 0.5);
- 
-    margin-bottom: 1rem;
-    border-bottom: 1px solid $hilightL;
 
-    position: fixed;
-    top:0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    
+    margin-bottom: 1rem;
+    position: relative;
+
+    &_top{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-image:linear-gradient(to right bottom, rgba($primary, 1),$hilightD, #eee);
+        filter: opacity(0.9);
+        box-shadow: 0 0.3rem 0.6rem rgba($tintL, $alpha: 0.4);
+        border-bottom: 1px solid $hilightL;
+
+        position: fixed;
+        top:0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+     
     &_logo{
-      
         padding: 2rem;
   
         &-img{
@@ -33,6 +38,26 @@
         }
     }
     &_btn{
-        margin-right: 3rem;
+        margin-right: 5rem;
+    }
+
+    &_links{
+        position: absolute;
+        top: 8rem;
+        height: 40px;
+        width: 100%;
+        padding: 2rem;   
+        text-align: center;
+
+        &>a{
+            text-decoration: none;
+            margin-right : 1rem;
+            font-size: 1.6rem;
+            color: $primary;
+            font-weight: 500;
+
+        }
+     
+        
     }
 }
