@@ -51,10 +51,18 @@
 
         &>a{
             text-decoration: none;
-            margin-right : 1rem;
+            margin-right : 2rem;
             font-size: 1.6rem;
             color: $primary;
             font-weight: 500;
+
+            &:hover {
+                text-decoration: underline;
+            }
+            &:active{
+                color: $hilightD;
+            }
+           
 
         }
      

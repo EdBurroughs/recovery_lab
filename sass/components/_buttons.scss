@@ -15,7 +15,7 @@
 
     &_blue{
         background-image: linear-gradient(to right bottom, rgba($primary, 1), rgba($hilightD, 1));
-        box-shadow: 0.3rem 0.3rem 0.5rem rgba($color: $tintD, $alpha: 0.3);
+        box-shadow: 0.4rem 0.3rem 0.5rem rgba($color: $tintD, $alpha: 0.4);
         color: $grey;
 
         &:hover{
@@ -24,6 +24,9 @@
             box-shadow: 0.5rem 0.5rem 0.7rem rgba($color: $tintD, $alpha: 0.5);
             font-size: 2;
        
+        }
+        &:active{
+            transform: none;
         }
      
     }

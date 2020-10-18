@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/2c93b3e7b7.js" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
     <title>Recovery Lab | Southport</title>
 </head>
 <body>
@@ -21,10 +23,10 @@
         </div>
           
         <div class="nav_links">
-            <a href=""><span>Home &nbsp;|</span></a>
-            <a href=""><span>Blog &nbsp; |</span></a>
-            <a href=""><span>Do I Need A Physio? &nbsp; |</span></a>  
-            <a href=""><span>More about NKT</span></a>        
+            <a href=""><span>Home</span></a>
+            <a href=""><span>Blog</span></a>
+            <a href=""><span>Do I Need A Physio?</span></a>  
+            <a href=""><span>More about NKT...</span></a>        
         </div>               
     </nav>
     
@@ -97,16 +99,29 @@
     </section>
 
     <section class="contact">
+        <div class="contact_details">
+            <h3>Contact</h3>
+            <div class="contact_map"  id="map"></div>
+        </div>
 
-
-
+       
+        <div class="contact_hours">
+            <div class="contact_hours_text">
+                <h3>Opening Times</h3> <br>
+                <p>Monday - Friday <br> <strong>9:00 - 20:00</strong> <br>
+                    Saturday <br> <strong>9:30 - 15:00</strong> </p> <br>
+                <p>For home visits and out of hours appointments please contact the clinic directly</p>
+            </div>
+            <div class="contact_hours_bg"></div>
+  
+        </div>
     </section>
 
     <footer class="footer">
 
     </footer>
-    
-
-
 </body>
+
+<script type = "text/javascript" src="/scripts/map.js"></script>
+
 </html>
