@@ -5,13 +5,13 @@ const coords = [-2.9663, 53.661];
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/ted1983/ckgfj187q3pu619pebhbfdkj8',        center: coords,
-    zoom: 16.5,
-    center: coords
-    //interactive: false,
+    zoom: 15,
+    center: coords,
+    interactive: false,
 });
 
 const popup = new mapboxgl.Popup({
-        offset:[-200,-200]})
+        offset:[-20,-20]})
     .setText('popup text');
 
 const markerElement = document.createElement('div');

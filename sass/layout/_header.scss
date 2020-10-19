@@ -1,8 +1,8 @@
 .header{
     text-align: center;
-    margin-top: 13rem;
-    background-color: #edf8fa;
-    background-image: linear-gradient(to left,#fff, #edf8fa,  #e1f6fa, #edf8fa, #fff);
+    margin-top: 15rem;
+    background-color: #edf8fa;background-image: linear-gradient(to left,#fff, #edf8fa,  #e1f6fa, #edf8fa, #fff);
+    
     
     &_title {
         padding: 4rem;
@@ -35,7 +35,8 @@
     &_text{
         margin: 4rem 0rem 1rem;
         color: $tintL;
-        font-weight: 500;
+        font-size: 1.7rem;
+        
         line-height: 2.3rem;
         text-align: center;
 

@@ -1,10 +1,35 @@
 .footer{
+    
+    width: 100%;
+    margin-bottom: 1rem;
+ 
+
 
     &_address{
+        color: $tintL;
         text-align: center;
+        font-size:2.2rem;
+        margin: 2rem;
+    }
+
+    & a {
+        text-decoration: none;
+        color: $tintL;
+    }
+    & hr{
+        margin: 0 auto 2rem auto;
+        width: 75%;
+        border: none;
+        height: 1px;
+        background-image: radial-gradient($primary, $grey);
+        box-shadow: 0 1px 2px black;
     }
 
     &_info{
+        color: $tintL;
+        font-size: 1.4rem;
+        margin: 2rem;
+        text-align: center;
 
     }
 }

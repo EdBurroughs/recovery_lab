@@ -1,5 +1,4 @@
 .nav{
-
     margin-bottom: 1rem;
     position: relative;
 
@@ -8,7 +7,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        background-image:linear-gradient(to right bottom, rgba($primary, 1),$hilightD, #eee);
+        background-image:linear-gradient(to right bottom, $primary,$hilightD, $grey);
         filter: opacity(0.9);
         box-shadow: 0 0.3rem 0.6rem rgba($tintL, $alpha: 0.4);
         border-bottom: 1px solid $hilightL;
@@ -43,10 +42,8 @@
 
     &_links{
         position: absolute;
-        top: 8rem;
-        height: 40px;
-        width: 100%;
-        padding: 2rem;   
+        top: -2.5rem; 
+        width: 100%;   
         text-align: center;
 
         &>a{
