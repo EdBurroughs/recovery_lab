@@ -234,25 +234,21 @@ body {
   justify-content: space-between; }
 
 .contact {
-  position: relative;
-  height: 80vh;
+  height: 85vh;
   margin-top: 3rem;
   background-image: linear-gradient(to left, #fff, #edf8fa, #e1f6fa, #edf8fa, #fff); }
   .contact_map {
-    border-radius: 4px;
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%; }
+    position: relative;
+    height: 85%; }
   .contact_heading {
     text-align: center;
-    padding: 1rem; }
+    padding: 1rem;
+    margin: 1rem; }
   .contact_hours {
     position: absolute;
     right: 5%;
     left: 70%;
-    top: 20%;
+    top: 10%;
     bottom: 10%;
     box-shadow: -4px 4px 7px rgba(4, 81, 96, 0.4);
     border-radius: 3px;
@@ -261,11 +257,13 @@ body {
       position: absolute;
       z-index: 1;
       color: #06839b;
+      font-weight: bold;
       padding: 1rem;
       background-image: linear-gradient(rgba(157, 167, 170, 0.2) 60%, rgba(172, 238, 252, 0.2));
       text-align: center;
       margin: 1rem;
-      line-height: 2rem; }
+      line-height: 2rem;
+      text-shadow: 0 0 4px #fff; }
     .contact_hours_bg {
       position: absolute;
       top: 0;
@@ -282,14 +280,14 @@ body {
 #map {
   border-radius: 4px;
   position: absolute;
-  top: 10%;
+  top: 0%;
   bottom: 0%;
   left: 5%;
   right: 20%;
   box-shadow: -2px 2px 5px #9da7aa; }
 
 #marker {
-  background-image: url("../../images/logo.jpg");
+  background-image: url("../images/logo.jpg");
   background-size: cover;
   width: 40px;
   height: 40px;
