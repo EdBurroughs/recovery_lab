@@ -6,6 +6,7 @@ const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/ted1983/ckgfj187q3pu619pebhbfdkj8',        center: coords,
     zoom: 15,
+    center: coords
     //interactive: false,
 
     });
