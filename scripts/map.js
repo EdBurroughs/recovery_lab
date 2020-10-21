@@ -4,15 +4,17 @@ const coords = [-2.9663, 53.661];
 
 const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/ted1983/ckgfj187q3pu619pebhbfdkj8',        center: coords,
-    zoom: 15,
+    style: 'mapbox://styles/ted1983/ckgfj187q3pu619pebhbfdkj8',        
     center: coords,
+    zoom: 15,
     interactive: false,
 });
 
 const popup = new mapboxgl.Popup({
-        offset:[-20,-20]})
-    .setText('popup text');
+        closeButton: false,
+        className: 'popup',
+    })
+    .setHTML('<h3>The Recovery Lab<h3/><br><p>143c Cambridge Road</p><br><p>PR9 9RZ<p>');
 
 const markerElement = document.createElement('div');
 markerElement.id = 'marker';

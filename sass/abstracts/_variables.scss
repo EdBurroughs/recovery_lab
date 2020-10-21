@@ -8,4 +8,21 @@ $primary : #08b6d9;
 $tintL : #0091b3;
 $tintD : #002d4a;
 
+$green : #b5f486;
+
+
+$gradient : #08b6d9,
+            #00cad4,
+            #23dcc0,
+            #73eaa4;
+       
+        
+@mixin horizontal_line {
+    margin: 0 auto 2rem auto;
+    width: 75%;
+    border: none;
+    height: 1px;
+    background-image: radial-gradient($primary, $grey);
+    box-shadow: 0 1px 2px black;
+}
 

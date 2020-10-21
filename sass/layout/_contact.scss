@@ -1,7 +1,7 @@
 .contact{
     height: 85vh;
     margin: 3rem 0 5rem 0;
-    background-image: linear-gradient(to left,#fff, #edf8fa,  #e1f6fa, #edf8fa, #fff);
+    background-image: linear-gradient(to left,#fff, #edf8fa, #edf8fa, #fff);
     
     &_map{
         position: relative;
@@ -71,4 +71,9 @@
     border-radius: 50%;
     border: 1px solid $primary;
     //box-shadow: -1px 1px 3px $tintD;
+}
+.popup{
+    
+    color: $tintL;
+    text-align: center;
 }

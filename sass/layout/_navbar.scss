@@ -7,7 +7,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
-        background-image:linear-gradient(to right bottom, $primary,$hilightD, $grey);
+        background-image:linear-gradient(to right bottom, $primary, $hilightD, $grey);
         filter: opacity(0.9);
         box-shadow: 0 0.3rem 0.6rem rgba($tintL, $alpha: 0.4);
         border-bottom: 1px solid $hilightL;
@@ -31,13 +31,14 @@
 
         &-text{
             display: inline-block;
-            vertical-align: top;
+            vertical-align: top ;
             color: $grey;
-            margin: 2rem;           
+            margin: 2rem; 
+            font-size: 1.6rem;          
         }
     }
     &_btn{
-        margin-right: 5rem;
+        margin-right: 4rem;
     }
 
     &_links{
@@ -48,16 +49,16 @@
 
         &>a{
             text-decoration: none;
-            margin-right : 2rem;
+            margin:0 2rem;
             font-size: 1.6rem;
-            color: $primary;
+            color: $tintL;
             font-weight: 500;
 
             &:hover {
                 text-decoration: underline;
             }
             &:active{
-                color: $hilightD;
+                color: $green;
             }
            
 
