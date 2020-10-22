@@ -1,15 +1,13 @@
 .footer{
     
     width: 100%;
-    margin-bottom: 1rem;
+    background-image: radial-gradient(  $hilightL, $grey);
  
-
-
     &_address{
         color: $tintL;
         text-align: center;
         font-size:2.2rem;
-        margin: 2rem;
+        padding: 2rem;
     }
 
     & a {
@@ -28,7 +26,6 @@
     &_info{
         color: $tintL;
         font-size: 1.4rem;
-        margin: 2rem;
         text-align: center;
 
     }

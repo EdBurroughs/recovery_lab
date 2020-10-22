@@ -19,6 +19,11 @@ h3 {
   font-size: 2rem;
   font-weight: 300; }
 
+h4 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #08b6d9; }
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -286,12 +291,12 @@ html {
 
 .footer {
   width: 100%;
-  margin-bottom: 1rem; }
+  background-image: radial-gradient(#aceefc, #eef8fa); }
   .footer_address {
     color: #0091b3;
     text-align: center;
     font-size: 2.2rem;
-    margin: 2rem; }
+    padding: 2rem; }
   .footer a {
     text-decoration: none;
     color: #0091b3; }
@@ -305,55 +310,91 @@ html {
   .footer_info {
     color: #0091b3;
     font-size: 1.4rem;
-    margin: 2rem;
     text-align: center; }
 
 .article {
   display: grid;
   grid-template-columns: 4em 1fr 1fr 1fr 1fr 4em;
   grid-template-rows: auto;
-  grid-template-areas: ". title title title title ." ". left left img1 img1 ." ". img2 img2 right right ." ". bottom bottom bottom bottom ." " ftr ftr ftr ftr ftr ftr";
+  grid-template-areas: ". .... title title .... ." ". main main  img1  img1 ." ". main main img1 img1 ." ". . bottom bottom . ." " ftr ftr ftr ftr ftr ftr";
   grid-gap: 1rem;
   margin-top: 15rem; }
   .article_title {
     grid-area: title;
     text-align: center;
-    margin: 1rem 0;
-    background: coral; }
-    .article_title hr {
-      margin: 0 auto 2rem auto;
-      width: 75%;
-      border: none;
-      height: 1px;
-      background-image: radial-gradient(#08b6d9, #eef8fa);
-      box-shadow: 0 1px 2px black; }
-  .article_blurb {
-    grid-area: blurb;
-    text-align: center;
-    background: chocolate; }
+    margin: 1rem 0 3rem 0; }
   .article_img1 {
     grid-area: img1;
-    background-image: url("https://source.unsplash.com/random/300x300");
-    background-size: cover; }
-  .article_left {
-    grid-area: left;
-    background: firebrick; }
-  .article_img2 {
-    grid-area: img2;
-    background-image: url("https://source.unsplash.com/random/300x300");
-    background-size: cover; }
-  .article_right {
-    grid-area: right;
-    background: salmon; }
+    background-image: url("../images/treatment.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .article_text {
+    grid-area: main;
+    padding: 1rem; }
   .article_bottom {
     grid-area: bottom;
-    background: gold;
-    text-align: center; }
-  .article_ftr {
-    grid-area: ftr;
-    background: chartreuse;
-    height: 20vh; }
+    text-align: center;
+    margin: 2rem 0 2rem 0; }
+    .article_bottom > p {
+      text-align: justify; }
   .article p {
-    font-size: 1.6rem; }
-  .article h4, .article h3 {
-    font-size: 2rem; }
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    color: #0091b3; }
+  .article hr {
+    margin: 0 auto 2rem auto;
+    width: 75%;
+    border: none;
+    height: 1px;
+    background-image: radial-gradient(#08b6d9, #eef8fa);
+    box-shadow: 0 1px 2px black; }
+  .article_footer {
+    background-image: radial-gradient(#aceefc, #eef8fa);
+    padding: 1rem; }
+    .article_footer_address {
+      color: #0091b3;
+      text-align: center;
+      font-size: 2rem;
+      margin: 1rem; }
+
+.nkt {
+  display: grid;
+  grid-template-columns: 4em 1fr 1fr 1fr 1fr 4em;
+  grid-template-rows: auto;
+  grid-template-areas: ". . title title   . ." ". main main img1 img1 ." ". main main img1 img1 ." " ftr ftr ftr ftr ftr ftr";
+  grid-gap: 1rem;
+  margin-top: 15rem;
+  margin-bottom: 2rem; }
+  .nkt_title {
+    grid-area: title;
+    text-align: center;
+    margin: 1rem 0 3rem 0; }
+  .nkt_text {
+    grid-area: main;
+    padding: 1rem; }
+    .nkt_text > ul {
+      list-style: inside;
+      list-style-type: square;
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: #0091b3; }
+  .nkt_img1 {
+    grid-area: img1;
+    background-image: url("https://source.unsplash.com/random");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .nkt p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    color: #0091b3; }
+  .nkt hr {
+    margin: 0 auto 2rem auto;
+    width: 75%;
+    border: none;
+    height: 1px;
+    background-image: radial-gradient(#08b6d9, #eef8fa);
+    box-shadow: 0 1px 2px black; }

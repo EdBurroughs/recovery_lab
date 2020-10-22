@@ -1,0 +1,69 @@
+.article{
+
+    display: grid;
+    grid-template-columns: 4em 1fr 1fr 1fr 1fr 4em;
+    grid-template-rows: auto;
+    grid-template-areas: ". .... title title .... ."
+                         ". main main  img1  img1 ."
+                         ". main main img1 img1 ."
+                         ". . bottom bottom . ."
+                         " ftr ftr ftr ftr ftr ftr";
+    grid-gap: 1rem; 
+    margin-top: 15rem;
+
+    &_title{
+     grid-area: title;
+     text-align: center;
+     margin: 1rem 0 3rem 0;
+    }
+
+    &_img1{
+        grid-area: img1;    
+        background-image: url('../images/treatment.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+ 
+    &_text{
+       grid-area: main;
+       //background-color: $grey;
+       padding: 1rem;
+       
+    }
+
+    &_bottom{
+        grid-area: bottom;
+        text-align: center;
+        margin: 2rem 0 2rem 0;
+        >p{
+            text-align: justify;
+        }
+    }
+
+    & p{
+        font-size: 1.4rem;
+        font-weight: 300;
+        line-height: 2.5rem;
+        color: $tintL;
+      
+    }
+
+    & hr{
+        @include horizontal_line
+    }
+
+    &_footer{
+        background-image: radial-gradient(  $hilightL, $grey);
+        padding: 1rem;
+
+        &_address{
+            color: $tintL;
+            text-align: center;
+            font-size:2rem;
+            margin: 1rem;
+         
+        }
+
+    }
+}
