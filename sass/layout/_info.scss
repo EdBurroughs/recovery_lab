@@ -3,5 +3,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    
+    @include media(medium){        
+        justify-content: space-evenly;
+    }
     
 }

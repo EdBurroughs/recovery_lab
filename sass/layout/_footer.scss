@@ -8,21 +8,20 @@
         text-align: center;
         font-size:2.2rem;
         padding: 2rem;
-    }
 
-    & hr{
-        margin: 0 auto 2rem auto;
-        width: 75%;
-        border: none;
-        height: 1px;
-        background-image: radial-gradient($primary, $grey);
-        box-shadow: 0 1px 2px black;
+        @include media(medium){
+          font-size: 1.8rem;
+         }   
     }
 
     &_info{
         color: $tintL;
         font-size: 1.4rem;
         text-align: center;
+
+        @include media(medium){
+            font-size: 1.2rem;
+           } 
 
     }
 }

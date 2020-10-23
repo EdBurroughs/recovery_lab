@@ -96,7 +96,7 @@ html {
   filter: drop-shadow(0px 0px 5px rgba(0, 145, 179, 0.5));
   border-bottom: 1px solid #aceefc;
   border-radius: 4px;
-  margin: 2rem; }
+  margin: 1rem; }
   .card h3 {
     color: #08b6d9;
     position: relative;
@@ -137,14 +137,16 @@ html {
         background-size: cover; }
       .card_face-front-2 {
         background-image: url("../images/massage.jpg");
-        background-position: center; }
+        background-position: center;
+        background-size: cover; }
       .card_face-front-3 {
         background-image: url("../images/stairs.jpg");
         background-position: center;
         background-size: cover; }
       .card_face-front-4 {
         background-image: url("../images/ergonome.jpg");
-        background-position: top; }
+        background-position: top;
+        background-size: cover; }
       .card_face-front-5 {
         background-image: url("../images/Acupuncture.webp");
         background-size: cover; }
@@ -172,7 +174,7 @@ html {
     padding: 2rem; }
     @media only screen and (max-width: 87.5em) {
       .header_title {
-        padding: 1.5rem; } }
+        padding: 1rem; } }
   .header_links > * {
     list-style: none;
     display: inline-block;
@@ -188,6 +190,11 @@ html {
       .header_links > * {
         font-size: 1.6rem;
         padding: 1.6rem;
+        margin: 1rem 2rem 0 2rem; } }
+    @media only screen and (max-width: 48em) {
+      .header_links > * {
+        font-size: 1.4rem;
+        padding: 1.4rem;
         margin: 1rem 2rem 0 2rem; } }
     .header_links > *:hover, .header_links > *:focus {
       box-shadow: 0 0 0.5rem #08b6d9;
@@ -295,20 +302,26 @@ html {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
+  @media only screen and (max-width: 87.5em) {
+    .info {
+      justify-content: space-evenly; } }
 
 .contact {
   height: 85vh;
   margin: 3rem 0 5rem 0;
   background-image: linear-gradient(to left, #fff, #edf8fa, #edf8fa, #fff); }
+  @media only screen and (max-width: 87.5em) {
+    .contact {
+      margin: 1rem 0 3rem 0; } }
   .contact_map {
     position: relative;
     height: 85%; }
   .contact_heading {
     text-align: center;
-    padding: 1rem;
-    margin: 1rem; }
+    padding: 1rem; }
   .contact_hours {
     position: absolute;
+    z-index: 10;
     right: 5%;
     left: 70%;
     top: 10%;
@@ -318,17 +331,22 @@ html {
     background-color: #fff; }
     @media only screen and (max-width: 87.5em) {
       .contact_hours {
-        right: 5%;
-        top: 0%;
+        right: 3%;
+        top: 5%;
         left: 65%;
-        bottom: 45%; } }
+        bottom: 5%; } }
     @media only screen and (max-width: 48em) {
       .contact_hours {
-        display: none; } }
+        top: 50%;
+        left: 10%;
+        right: 10%;
+        bottom: 0; } }
     .contact_hours_text {
       position: absolute;
       top: 0;
       bottom: 0;
+      left: 0;
+      right: 0;
       color: #0091b3;
       font-size: 1.6rem;
       padding: 2rem 1rem 0 1rem;
@@ -339,8 +357,13 @@ html {
       @media only screen and (max-width: 87.5em) {
         .contact_hours_text {
           font-size: 1.4rem;
-          line-height: 1.6rem;
-          margin: 5px; } }
+          line-height: 1.6rem; } }
+      @media only screen and (max-width: 48em) {
+        .contact_hours_text {
+          font-size: 1.2rem;
+          line-height: 1.4rem;
+          padding: 1rem 0;
+          margin: 3px; } }
     .contact_hours_bg {
       position: absolute;
       top: 0;
@@ -354,9 +377,6 @@ html {
             filter: blur(0px);
             filter: grayscale(1);
             opacity: 0.5; */ }
-      @media only screen and (max-width: 87.5em) {
-        .contact_hours_bg {
-          background-image: none; } }
 
 #map {
   border-radius: 4px;
@@ -369,6 +389,9 @@ html {
   @media only screen and (max-width: 87.5em) {
     #map {
       right: 5%; } }
+  @media only screen and (max-width: 48em) {
+    #map {
+      bottom: 45%; } }
 
 #marker {
   background-image: url("../images/logo.jpg");
@@ -390,17 +413,16 @@ html {
     text-align: center;
     font-size: 2.2rem;
     padding: 2rem; }
-  .footer hr {
-    margin: 0 auto 2rem auto;
-    width: 75%;
-    border: none;
-    height: 1px;
-    background-image: radial-gradient(#08b6d9, #eef8fa);
-    box-shadow: 0 1px 2px black; }
+    @media only screen and (max-width: 87.5em) {
+      .footer_address {
+        font-size: 1.8rem; } }
   .footer_info {
     color: #0091b3;
     font-size: 1.4rem;
     text-align: center; }
+    @media only screen and (max-width: 87.5em) {
+      .footer_info {
+        font-size: 1.2rem; } }
 
 .article {
   display: grid;
