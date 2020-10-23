@@ -12,6 +12,8 @@
     margin-top: 15rem;
     margin-bottom: 2rem;
 
+    background-image: linear-gradient(to left,#fff, #edf8fa, #fff);
+
     @include media(medium){
         grid-template-columns: 1em 1fr 1fr 1fr 1fr 1em;
         grid-template-areas:    ". title title title title ."

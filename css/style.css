@@ -431,7 +431,7 @@ html {
   grid-template-areas: ". .... title title .... ." ". main main  img1  img1 ." ". main main img1 img1 ." ". . bottom bottom . ." " ftr ftr ftr ftr ftr ftr";
   grid-gap: 1rem;
   margin-top: 15rem;
-  background-image: linear-gradient(to left, #fff, #edf8fa, #edf8fa, #fff); }
+  background-image: linear-gradient(to left, #fff, #edf8fa, #fff); }
   @media only screen and (max-width: 87.5em) {
     .article {
       grid-template-columns: 1em 1fr 1fr 1fr 1fr 1em;
@@ -440,8 +440,7 @@ html {
     .article {
       display: flex;
       flex-direction: column;
-      margin-top: 12rem;
-      background-image: linear-gradient(to left, #fff, #edf8fa, #fff); } }
+      margin-top: 12rem; } }
   .article_title {
     grid-area: title;
     text-align: center;
@@ -492,7 +491,8 @@ html {
   grid-template-areas: ". . title title  . ." ". main main img1 img1 ." ". main main img1 img1 ." " ftr ftr ftr ftr ftr ftr";
   grid-gap: 1rem;
   margin-top: 15rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  background-image: linear-gradient(to left, #fff, #edf8fa, #fff); }
   @media only screen and (max-width: 87.5em) {
     .nkt {
       grid-template-columns: 1em 1fr 1fr 1fr 1fr 1em;

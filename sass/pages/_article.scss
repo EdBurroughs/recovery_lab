@@ -11,7 +11,7 @@
     grid-gap: 1rem; 
     margin-top: 15rem;
 
-    background-image: linear-gradient(to left,#fff, #edf8fa, #edf8fa, #fff);
+    background-image: linear-gradient(to left,#fff, #edf8fa, #fff);
 
 
     @include media(medium){
@@ -27,7 +27,6 @@
         display: flex;
         flex-direction: column;
         margin-top: 12rem;
-        background-image: linear-gradient(to left,#fff, #edf8fa,#fff);
     }
 
      &_title{
