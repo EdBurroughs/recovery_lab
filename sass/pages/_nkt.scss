@@ -1,9 +1,9 @@
 .nkt{
     display: grid;
  
-    grid-template-columns: 4em 1fr 1fr 1fr 1fr 4em;
+    grid-template-columns: 4em 1fr 1.5fr 1.5fr 1fr 4em;
     grid-template-rows: auto;
-    grid-template-areas: ". . title title   . ."
+    grid-template-areas: ". . title title  . ."
                          ". main main img1 img1 ."
                          ". main main img1 img1 ."
                          " ftr ftr ftr ftr ftr ftr";
@@ -16,10 +16,12 @@
         grid-area: title;
         text-align: center;
         margin: 1rem 0 3rem 0;
+
     }
     &_text{
         grid-area: main;
         padding: 1rem;
+        margin-bottom: 2rem;
 
         & > ul{
             list-style: inside;
@@ -37,6 +39,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        margin-bottom: 2rem;
     }
     & p{
         font-size: 1.4rem;

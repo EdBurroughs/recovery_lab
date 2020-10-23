@@ -4,7 +4,6 @@
 
     &_top{
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         background-image:linear-gradient(to right bottom, $primary, $hilightD, $grey);
@@ -16,17 +15,30 @@
         top:0;
         left: 0;
         width: 100%;
-        z-index: 1000;
+        z-index: 1000;   
     }
      
     &_logo{
         padding: 2rem;
+        @include media(small){
+            padding: 1rem;
+        }
+
   
         &-img{
             height: 7rem;
             width: 7rem;
             box-shadow: 0.3rem 0.3rem 0.5rem rgba($tintD, $alpha: 0.5);
-            border-radius: 2px;          
+            border-radius: 2px; 
+            
+            @include media(medium){
+                height: 6rem;
+                width: 6rem;
+            }
+            @include media(small){
+                height: 5rem;
+                width: 5rem;
+            }
         }
 
         &-text{
@@ -34,11 +46,22 @@
             vertical-align: top ;
             color: $grey;
             margin: 2rem; 
-            font-size: 1.6rem;          
+            font-size: 1.6rem;
+
+            @include media(medium){
+                font-size: 1.2rem;
+            } 
+            @include media(small){
+                display: none;
+             }    
         }
     }
     &_btn{
         margin-right: 4rem;
+
+        @include media(medium){
+            margin-right: 2rem;
+         }   
     }
 
     &_links{
@@ -54,16 +77,16 @@
             color: $tintL;
             font-weight: 500;
 
+            @include media(medium){
+                font-size: 1.4rem;
+             }
+
             &:hover {
                 text-decoration: underline;
             }
             &:active{
                 color: $green;
             }
-           
-
-        }
-     
-        
+        }       
     }
 }

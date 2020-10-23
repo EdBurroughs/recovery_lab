@@ -3,9 +3,16 @@
     margin-top: 15rem;
     background-color: #edf8fa;background-image: linear-gradient(to left,#fff, #edf8fa, #edf8fa, #fff);
     
+    @include media(small){
+        margin-top: 11rem;
+    }
     
     &_title {
         padding: 2rem;
+
+        @include media(medium){        
+            padding: 1.5rem;
+        }
     }
 
     &_links{
@@ -22,6 +29,11 @@
             box-shadow: 0 0 0.7rem $tintL;
             transition: all 0.4s;
 
+            @include media(medium){
+                font-size: 1.6rem;
+                padding: 1.6rem;
+            }
+
             &:hover,
             &:focus{
                 box-shadow: 0 0 0.5rem $primary;
@@ -33,12 +45,21 @@
         }
     }
     &_text{
-        margin: 4rem 0rem 1rem;
+        margin: 4rem 0 1rem 0;
+        padding: 0 2rem;
         color: $tintL;
-        font-size: 1.7rem;
-        
+        font-size: 1.6rem;       
         line-height: 2.3rem;
         text-align: center;
+
+        @include media(medium){
+            font-size: 1.4rem;
+            line-height: 2rem;
+        }
+
+        @include media(small){
+            font-size: 1.2rem;
+        }
 
     }
     & hr{

@@ -23,18 +23,32 @@
         box-shadow: -4px 4px 7px  rgba($tintD, 0.4);
         border-radius: 3px;
         background-color: #fff;
+        
+
+        @include media(medium){        
+            right: 5%;
+            top: 0%;
+            left: 65%;
+            bottom: 45%;
+        }
       
         &_text{
             position: absolute;
-            z-index: 1;
+            top:0;
+            bottom: 0;
             color: $tintL;
             font-size: 1.6rem;
-            padding: 1rem;
-            background-image: linear-gradient(rgba($greyD,0.2) 60%, rgba($hilightL, 0.2));
+            padding: 2rem 1rem 0 1rem;        
             text-align: center;
             margin: 1rem;
             line-height: 1.8rem;
-            text-shadow: 0 0 4px #fff;
+            background-image: linear-gradient(rgba($greyD,0.2) 60%, rgba($hilightL, 0.2));
+
+            @include media(medium){        
+                font-size: 1.4rem;
+                line-height: 1.6rem;
+                margin: 5px;
+            }
         }
         &_bg{
             position: absolute;
@@ -43,13 +57,17 @@
             bottom: 0;
             right:0 ;
            
-            background-image: 
+          /*   background-image: 
             url('../images/clocks.webp');
             background-position: center;
             background-size: cover;
             filter: blur(0px);
             filter: grayscale(1);
-            opacity: 0.5;
+            opacity: 0.5; */
+
+            @include media(medium){        
+                background-image: none;
+            }
         }   
     }
 }
@@ -62,6 +80,12 @@
     left: 5%; 
     right: 20%;
     box-shadow: -2px 2px 5px $greyD;
+
+    @include media(medium){        
+        right: 5%;
+    }
+
+    
 }
 #marker {
     background-image: url('../images/logo.jpg');

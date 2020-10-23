@@ -1,7 +1,7 @@
 .article{
 
     display: grid;
-    grid-template-columns: 4em 1fr 1fr 1fr 1fr 4em;
+    grid-template-columns: 3em 1fr 1fr 1fr 1fr 3em;
     grid-template-rows: auto;
     grid-template-areas: ". .... title title .... ."
                          ". main main  img1  img1 ."
@@ -11,7 +11,16 @@
     grid-gap: 1rem; 
     margin-top: 15rem;
 
-    &_title{
+    @include media(medium){
+        grid-template-columns: 1em 1fr 1fr 1fr 1fr 1em;
+        grid-template-areas:    ". title title title title ."
+                                ". main main  img1  img1 ."
+                                ". main main img1 img1 ."
+                                ". bottom bottom bottom bottom ."
+                                " ftr ftr ftr ftr ftr ftr";
+    }
+
+     &_title{
      grid-area: title;
      text-align: center;
      margin: 1rem 0 3rem 0;
@@ -27,7 +36,6 @@
  
     &_text{
        grid-area: main;
-       //background-color: $grey;
        padding: 1rem;
        
     }

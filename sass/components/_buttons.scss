@@ -5,12 +5,22 @@
     border-radius: 10rem;
     border: none;
     transition: all 0.4s;
+    margin-right: 1rem;
 
 
     &_lg{
         padding: 1.5rem 3rem;
         font-size: 1.8rem;
         font-weight: 300;
+
+        @include media(medium){
+            font-size: 1.5rem;
+            padding: 1.5rem 2.3rem;
+        }
+        @include media(small){
+            font-size: 1.4rem;
+            padding: 1.3rem 2.3rem;
+        }
     }
 
     &_blue{
