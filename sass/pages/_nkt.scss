@@ -12,10 +12,26 @@
     margin-top: 15rem;
     margin-bottom: 2rem;
 
+    @include media(medium){
+        grid-template-columns: 1em 1fr 1fr 1fr 1fr 1em;
+        grid-template-areas:    ". title title title title ."
+                                ". main main  img1  img1 ."
+                                ". main main img1 img1 ."
+                                ". bottom bottom bottom bottom ."
+                                " ftr ftr ftr ftr ftr ftr";
+    }
+
+    @include media(small){
+        display: flex;
+        flex-direction: column;
+        margin-top: 12rem;
+        background-image: linear-gradient(to left,#fff, #edf8fa,#fff);
+    }
+
     &_title{
         grid-area: title;
         text-align: center;
-        margin: 1rem 0 3rem 0;
+        padding: 2rem;
 
     }
     &_text{
@@ -34,12 +50,12 @@
        
     }
     &_img1{
-        grid-area: img1;
-        background-image: url('https://source.unsplash.com/random');
+        grid-area: img1;    
+        background-image: url('../images/treatment.webp');         
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
-        margin-bottom: 2rem;
+        min-height: 40vh;
     }
     & p{
         font-size: 1.4rem;

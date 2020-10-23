@@ -66,13 +66,14 @@
 
     &_links{
         position: absolute;
-        top: -2.5rem; 
+        top: -3.5rem; 
         width: 100%;   
         text-align: center;
+        padding: 1rem;
 
         &>a{
             text-decoration: none;
-            margin:0 2rem;
+            margin: 2rem;
             font-size: 1.6rem;
             color: $tintL;
             font-weight: 500;

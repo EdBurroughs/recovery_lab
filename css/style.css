@@ -165,7 +165,6 @@ html {
 .header {
   text-align: center;
   margin-top: 15rem;
-  background-color: #edf8fa;
   background-image: linear-gradient(to left, #fff, #edf8fa, #edf8fa, #fff); }
   @media only screen and (max-width: 48em) {
     .header {
@@ -276,12 +275,13 @@ html {
         margin-right: 1rem; } }
   .nav_links {
     position: absolute;
-    top: -2.5rem;
+    top: -3.5rem;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding: 1rem; }
     .nav_links > a {
       text-decoration: none;
-      margin: 0 2rem;
+      margin: 2rem;
       font-size: 1.6rem;
       color: #0091b3;
       font-weight: 500; }
@@ -430,21 +430,31 @@ html {
   grid-template-rows: auto;
   grid-template-areas: ". .... title title .... ." ". main main  img1  img1 ." ". main main img1 img1 ." ". . bottom bottom . ." " ftr ftr ftr ftr ftr ftr";
   grid-gap: 1rem;
-  margin-top: 15rem; }
+  margin-top: 15rem;
+  background-image: linear-gradient(to left, #fff, #edf8fa, #edf8fa, #fff); }
   @media only screen and (max-width: 87.5em) {
     .article {
       grid-template-columns: 1em 1fr 1fr 1fr 1fr 1em;
       grid-template-areas: ". title title title title ." ". main main  img1  img1 ." ". main main img1 img1 ." ". bottom bottom bottom bottom ." " ftr ftr ftr ftr ftr ftr"; } }
+  @media only screen and (max-width: 48em) {
+    .article {
+      display: flex;
+      flex-direction: column;
+      margin-top: 12rem;
+      background-image: linear-gradient(to left, #fff, #edf8fa, #fff); } }
   .article_title {
     grid-area: title;
     text-align: center;
-    margin: 1rem 0 3rem 0; }
+    padding: 2rem; }
+  .article_blurb {
+    padding: 1rem; }
   .article_img1 {
     grid-area: img1;
     background-image: url("../images/treatment.webp");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; }
+    background-position: center;
+    min-height: 40vh; }
   .article_text {
     grid-area: main;
     padding: 1rem; }
@@ -483,10 +493,20 @@ html {
   grid-gap: 1rem;
   margin-top: 15rem;
   margin-bottom: 2rem; }
+  @media only screen and (max-width: 87.5em) {
+    .nkt {
+      grid-template-columns: 1em 1fr 1fr 1fr 1fr 1em;
+      grid-template-areas: ". title title title title ." ". main main  img1  img1 ." ". main main img1 img1 ." ". bottom bottom bottom bottom ." " ftr ftr ftr ftr ftr ftr"; } }
+  @media only screen and (max-width: 48em) {
+    .nkt {
+      display: flex;
+      flex-direction: column;
+      margin-top: 12rem;
+      background-image: linear-gradient(to left, #fff, #edf8fa, #fff); } }
   .nkt_title {
     grid-area: title;
     text-align: center;
-    margin: 1rem 0 3rem 0; }
+    padding: 2rem; }
   .nkt_text {
     grid-area: main;
     padding: 1rem;
@@ -499,11 +519,11 @@ html {
       color: #0091b3; }
   .nkt_img1 {
     grid-area: img1;
-    background-image: url("https://source.unsplash.com/random");
+    background-image: url("../images/treatment.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin-bottom: 2rem; }
+    min-height: 40vh; }
   .nkt p {
     font-size: 1.4rem;
     font-weight: 300;
